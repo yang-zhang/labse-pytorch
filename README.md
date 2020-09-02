@@ -52,5 +52,5 @@ output = model(input_ids, token_type_ids=token_type_ids, attention_mask=attentio
 english_embeddings = output[1].cpu().detach().numpy()
 english_embeddings = normalize(english_embeddings)
 ```
-Notice that the embeddings are l2-normalized in the paper as well as the Tensorflow Hub implmentation, and that is what we did at the end of the code.
+Notice that the embeddings are l2-normalized in the paper as well as the Tensorflow Hub implementation, and that is what we did at the end of the code.
 
