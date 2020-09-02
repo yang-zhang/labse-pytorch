@@ -40,7 +40,8 @@ input_ids = tok_res['input_ids']
 token_type_ids = tok_res['token_type_ids']
 attention_mask = tok_res['attention_mask']
 
-device=torch.device('cuda')
+device=torch.device('cpu')
+# device=torch.device('cuda') # uncomment if using gpu
 input_ids = torch.tensor(input_ids).to(device)
 token_type_ids = torch.tensor(token_type_ids).to(device)
 attention_mask = torch.tensor(attention_mask).to(device)
