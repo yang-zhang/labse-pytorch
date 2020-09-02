@@ -40,13 +40,12 @@ input_ids = tok_res['input_ids']
 token_type_ids = tok_res['token_type_ids']
 attention_mask = tok_res['attention_mask']
 
-
 device=torch.device('cuda')
 input_ids = torch.tensor(input_ids).to(device)
 token_type_ids = torch.tensor(token_type_ids).to(device)
 attention_mask = torch.tensor(attention_mask).to(device)
-
 model = model.to(device)
+
 output = model(input_ids, token_type_ids=token_type_ids, attention_mask=attention_mask)
 english_embeddings = output[1].cpu().detach().numpy()
 english_embeddings = normalize(english_embeddings)
