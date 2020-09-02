@@ -7,7 +7,8 @@ Pytorch model of LaBSE from [Language-agnostic BERT Sentence Embedding](https://
 > We adapt multilingual BERT to produce language-agnostic sen- tence embeddings for 109 languages. While English sentence embeddings have been obtained by fine-tuning a pretrained BERT model, such models have not been applied to multilingual sentence embeddings. Our model combines masked language model (MLM) and translation language model (TLM) pretraining with a translation ranking task using bi-directional dual encoders. The resulting multilingual sentence embeddings improve average bi-text retrieval accuracy over 112 languages to 83.7%, well above the 65.5% achieved by the prior state-of-the-art on Tatoeba. Our sentence embeddings also establish new state-of-the-art results on BUCC and UN bi- text retrieval.
 
 ## Convert to Pytorch model
-### Download Pytorch model
+You can directly download the Pytorch model or convert the Tensorflow model by yourself.
+### Download the Pytorch model
 You can download the Pytorch model from Google Drive: https://drive.google.com/drive/folders/1AmWfiCUhSGgjB_v2Bxcldu466Q2RG8o7?usp=sharing
 ### Convert by yourself
 - A Tensorflow model is available on [Tensorflow Hub](https://tfhub.dev/google/LaBSE/1). 
